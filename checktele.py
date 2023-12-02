@@ -174,23 +174,35 @@ async def _(event):
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_file(event.chat_id, "https://t.me/aaxxxa/158",caption=f'''
-𝚝𝚑𝚎 𝚔𝚒𝚗𝚐 ↬ @u0uu0
-𝚞𝚜𝚎𝚛 ↬ (@{username})
-𝚋𝚢 ↬ @i_m_q ↬ @aaxxxa
-𝚕𝚘𝚘𝚙𝚜 ↬  {trys}
+𝐔𝐒𝐄𝐑 𝐈𝐒 𝐃𝐎𝐍𝐄
+▰▱▰▱▰▱▰▱▰▱▰
+ᵿˢᴱᴿ 𓌹 @{username} 𓌺
+ᶜᴸᴵᶜᴷ 𓌹{trys}𓌺
+ˢᴬᵛᴱᴰ 𓌹 ᶜᴴᴬᴺᴺᴱᴸ 𓌺
+▱▰▱▰▱▰▱▰▱▰▱
+𝐏𝐘 @u0uu0 ↬ @aaxxxa 
+    ''')
+                    await event.client.send_file("@u0uu0", "https://t.me/aaxxxa/158",caption=f'''
+𝐔𝐒𝐄𝐑 𝐈𝐒 𝐃𝐎𝐍𝐄
+▰▱▰▱▰▱▰▱▰▱▰
+ᵿˢᴱᴿ 𓌹 @{username} 𓌺
+ᶜᴸᴵᶜᴷ 𓌹{trys}𓌺
+ˢᴬᵛᴱᴰ 𓌹 ᶜᴴᴬᴺᴺᴱᴸ 𓌺
+▱▰▱▰▱▰▱▰▱▰▱
+𝐏𝐘 @u0uu0 ↬ @aaxxxa
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await sython.send_message(event.chat_id, f'''error with @{username}
+                    await sython.send_message("@u0uu0", f'''error with @{username}
     The error :
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await sython.send_message(event.chat.id, "flood")
+                        await sython.send_message(event.chat.id, "new flood")
             else:
                 pass
             trys += 1
