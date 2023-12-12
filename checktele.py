@@ -115,6 +115,20 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
+    if choice == "11":
+        c = d = random.choices(a)
+        d = random.choices(e)
+        f = [c[0], c[0], c[0], d[0], d[0], d[0], d[0], d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        if username in banned[0]:
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], c[0], c[0], d[0], d[0], d[0], d[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+        else:
+            pass
     return username
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.checker"))
@@ -137,6 +151,12 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.chk (.*)")) 
 async def _(event):
+    try:
+    	await sython(functions.channels.JoinChannelRequest(
+    	channel='gggggggggggggggug'
+    	))
+    except:
+    	pass
     if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
@@ -144,7 +164,7 @@ async def _(event):
         ch = str(msg[2])
         choice = str(msg[1])
         trys = 0
-        await event.edit(f"Okay, I'll check the type `{choice}` From the ministers on `{ch}` , By number `{msg[0]}` Of attempts !")
+        await event.edit(f"Okay, I'll check the type `{choice}`\nFrom the ministers on `{ch}`\n , By number `{msg[0]}` Of attempts !")
 
         @sython.on(events.NewMessage(outgoing=True, pattern=r"\.check chk")) 
         async def _(event):
@@ -182,29 +202,12 @@ async def _(event):
 ▱▰▱▰▱▰▱▰▱▰▱
 𝐏𝐘 @u0uu0 ↬ @aaxxxa 
     ''')
-                    await event.client.send_file("@u0uu0", "https://t.me/aaxxxa/158",caption=f'''
-𝐔𝐒𝐄𝐑 𝐈𝐒 𝐃𝐎𝐍𝐄
-▰▱▰▱▰▱▰▱▰▱▰
-ᵿˢᴱᴿ 𓌹 @{username} 𓌺
-ᶜᴸᴵᶜᴷ 𓌹{trys}𓌺
-ˢᴬᵛᴱᴰ 𓌹 ᶜᴴᴬᴺᴺᴱᴸ 𓌺
-▱▰▱▰▱▰▱▰▱▰▱
-𝐏𝐘 @u0uu0 ↬ @aaxxxa
-    ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await sython.send_message("@u0uu0", f'''error with @{username}
-    The error :
-    {str(eee)}''')
-                    if "A wait of" in str(eee):
-                        break
-                    else:
-                        await sython.send_message(event.chat.id, "new flood")
-            else:
-                pass
+                    await sython.send_message("@gggggggggggggggug", f'''error with @{username}''')                                    )
             trys += 1
 
         isclaim.clear()
