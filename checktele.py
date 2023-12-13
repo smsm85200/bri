@@ -93,7 +93,7 @@ def gen_user(choice):
             username = username+'bot'
         else:
             pass
-    if choice == "5":
+    if choice == "4":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
@@ -107,7 +107,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "6":
+    if choice == "5":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
@@ -121,7 +121,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "7":
+    if choice == "6":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
@@ -135,7 +135,7 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "8":
+    if choice == "7":
         c = random.choices(a)
         d = random.choices(e)
         s = random.choices(e)
@@ -146,6 +146,20 @@ def gen_user(choice):
             d = random.choices(e)
             s = random.choices(e)
             f =  [c[0], d[0], s[0], s[0], s[0]]
+            username = ''.join(f)
+        else:
+            pass
+    if choice == "8":
+        c = random.choices(a)
+        d = random.choices(o)
+        s = random.choices(e)
+        f =  [c[0], c[0], c[0], d[0], s[0]]
+        username = ''.join(f)
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(o)
+            s = random.choices(e)
+            f =  [c[0], c[0], c[0], d[0], s[0]]
             username = ''.join(f)
         else:
             pass
