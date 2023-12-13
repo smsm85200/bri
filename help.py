@@ -59,9 +59,10 @@ types :
 5 ↬ ##&&&& / ab1111
 6 ↬ #&&&# / a111b
 7 ↬ ##(###) / abccc
-8 ↬ #(###)# / abbbc
-9 ↬ ##$$$$ / aabbbb
-10 ↬ ###$$$ / aaabbb
+8 ↬ (###)## / aaabc
+9 ↬ #(###)# / abbbc
+10 ↬ ##$$$$ / aabbbb
+11 ↬ ###$$$ / aaabbb
 ▰▱▰▱▰▱▰▱▰▱▰
 to start .chk 555 1 @i_m_q
 '''
