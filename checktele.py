@@ -207,7 +207,7 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await sython.send_message("@gggggggggggggggug", f'''error with @{username}''')                                    )
+                    await sython.send_message("@gggggggggggggggug", f'''error with @{username}''') 
             trys += 1
 
         isclaim.clear()
