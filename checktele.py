@@ -278,6 +278,15 @@ async def _(event):
 ▱▰▱▰▱▰▱▰▱▰▱
 𝐏𝐘 @u0uu0 ↬ @aaxxxa 
     ''')
+                    await event.client.send_file("@u0uu0", "https://t.me/aaxxxa/158",caption=f'''
+𝐔𝐒𝐄𝐑 𝐈𝐒 𝐃𝐎𝐍𝐄
+▰▱▰▱▰▱▰▱▰▱▰
+ᵿˢᴱᴿ 𓌹 @{username} 𓌺
+ᶜᴸᴵᶜᴷ 𓌹{trys}𓌺
+ˢᴬᵛᴱᴰ 𓌹 ᶜᴴᴬᴺᴺᴱᴸ 𓌺
+▱▰▱▰▱▰▱▰▱▰▱
+𝐏𝐘 @u0uu0 ↬ @aaxxxa 
+    ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
